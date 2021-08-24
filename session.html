@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <style>
+        body{
+            text-align: center; 
+        }
+        h1{
+            color: brown;
+        }
+        #add:hover{
+            background-color: rgb(30, 85, 104)!important;
+            color: white!important;
+        }
+        .del:hover{
+            background-color: #d60939!important;
+            color: white!important;
+        }
+        tr:hover{
+            background-color: rgb(90, 134, 127);
+            border: 2px solid gray;
+        }
+        table{
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 64%;
+        }
+        td{
+            text-align: left;
+            border: 1px solid black;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        form{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ToDo List</h1>
+    </header>
+    <main>
+        <form>
+            <input type="text" placeholder="Enter text" style="width: 50%; height: 25px;">
+            <button type="button" id="add" style="background-color: white; color: rgb(58, 105, 121); height: 30px; width: 6%;">ADD</button>
+            <button type="button" class="del" style="background-color: white; color: #d60939; height: 30px; width: 6%;">DEL</button>
+        </form>
+        <table>
+            <tr>
+                <td class="strike" style="border-right: none;"><input class="checkbox" type="checkbox"> sdhbwufh </td>
+                <td style="color: red; border-right: none; border-left: none;"><button type="button">x</button></td>
+                <td style="color: blue; border-right: none; border-left: none;"> </td>
+                <td style="color: blue; border-left: none;"><button type="button">v</button></td>
+            </tr>
+            <tr>
+                <td style="border-right: none;"><input class="checkbox" type="checkbox"> ksdhfjjef</td>
+                <td style="color: red; border-right: none; border-left: none;"><button type="button">x</button></td>
+                <td style="color: blue; border-right: none; border-left: none;"><button type="button">^</button></td>
+                <td style="color: blue; border-left: none;"><button type="button">v</button></td>
+            </tr>
+            <tr>
+                <td style="border-right: none;"><input type="checkbox"> asdhajsdajk</td>
+                <td style="color: red; border-right: none; border-left: none;"><button type="button">x</button></td>
+                <td style="color: blue; border-right: none; border-left: none;"><button type="button">^</button></td>
+                <td style="color: blue; border-left: none;"> </td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
